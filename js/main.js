@@ -2,5 +2,7 @@ let theButtons = document.querySelectorAll('#buttonHolder img'),
     puzzleBoard = document.querySelector('.puzzle-board');
 
 function changeBGImage() {
-    puzzleBoard.getElementsByClassName.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+    puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 }
+
+theButtons.forEach(button => button.addEventListener('click', changeBGImage));
